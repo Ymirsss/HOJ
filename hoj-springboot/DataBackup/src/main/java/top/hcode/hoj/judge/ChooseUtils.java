@@ -85,6 +85,7 @@ public class ChooseUtils {
                 judgeServer.setTaskNumber(judgeServer.getTaskNumber() + 1);
                 boolean isOk = judgeServerService.updateById(judgeServer);
                 if (isOk) {
+                    judgeServer.setUrl("192.168.1.146:8088");
                     return judgeServer;
                 }
             }
@@ -132,6 +133,8 @@ public class ChooseUtils {
                         .eq(fixedTag, true);
                 boolean isOk = judgeServerService.update(judgeServerUpdateWrapper);
                 if (isOk) {
+                    judgeServer.setUrl("192.168.1.146:8088");
+
                     return judgeServer;
                 }
             }

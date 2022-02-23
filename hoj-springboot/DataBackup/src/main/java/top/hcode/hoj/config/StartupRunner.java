@@ -67,17 +67,17 @@ public class StartupRunner implements CommandLineRunner {
     @Value("${MYSQL_DATABASE_NAME:hoj}")
     private String mysqlDBName;
 
-    @Value("${MYSQL_HOST:172.20.0.3}")
+    @Value("${MYSQL_HOST:192.168.1.146}")
     private String mysqlHost;
 
-    @Value("${MYSQL_PUBLIC_HOST:172.20.0.3}")
+    @Value("${MYSQL_PUBLIC_HOST:192.168.1.146}")
     private String mysqlPublicHost;
 
     @Value("${MYSQL_PORT:3306}")
     private Integer mysqlPort;
 
     // 缓存配置
-    @Value("${REDIS_HOST:172.20.0.2}")
+    @Value("${REDIS_HOST:192.168.1.146}")
     private String redisHost;
 
     @Value("${REDIS_PORT:6379}")
@@ -108,16 +108,16 @@ public class StartupRunner implements CommandLineRunner {
     @Value("${HDU_ACCOUNT_PASSWORD_LIST:}")
     private List<String> hduPasswordList;
 
-    @Value("${CF_ACCOUNT_USERNAME_LIST:}")
+    @Value("${CF_ACCOUNT_USERNAME_LIST:popcorn666}")
     private List<String> cfUsernameList;
 
-    @Value("${CF_ACCOUNT_PASSWORD_LIST:}")
+    @Value("${CF_ACCOUNT_PASSWORD_LIST:popcorn@666}")
     private List<String> cfPasswordList;
 
-    @Value("${POJ_ACCOUNT_USERNAME_LIST:}")
+    @Value("${POJ_ACCOUNT_USERNAME_LIST:IC-vj1}")
     private List<String> pojUsernameList;
 
-    @Value("${POJ_ACCOUNT_PASSWORD_LIST:}")
+    @Value("${POJ_ACCOUNT_PASSWORD_LIST:IC-vj1}")
     private List<String> pojPasswordList;
 
     @Value("${ATCODER_ACCOUNT_USERNAME_LIST:}")
@@ -126,10 +126,10 @@ public class StartupRunner implements CommandLineRunner {
     @Value("${ATCODER_ACCOUNT_PASSWORD_LIST:}")
     private List<String> atcoderPasswordList;
 
-    @Value("${SPOJ_ACCOUNT_USERNAME_LIST:}")
+    @Value("${SPOJ_ACCOUNT_USERNAME_LIST:popcorn666}")
     private List<String> spojUsernameList;
 
-    @Value("${SPOJ_ACCOUNT_PASSWORD_LIST:}")
+    @Value("${SPOJ_ACCOUNT_PASSWORD_LIST:popcorn@666}")
     private List<String> spojPasswordList;
 
     @Value("${spring.profiles.active}")

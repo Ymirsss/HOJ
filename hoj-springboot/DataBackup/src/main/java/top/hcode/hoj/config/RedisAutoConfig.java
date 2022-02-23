@@ -27,7 +27,7 @@ public class RedisAutoConfig {
 
     @Configuration
     public static class JedisConf {
-        @Value("${spring.redis.host:172.20.0.2}")
+        @Value("${spring.redis.host:192.168.1.146}")
         private String host;
         @Value("${spring.redis.port:6379}")
         private Integer port;

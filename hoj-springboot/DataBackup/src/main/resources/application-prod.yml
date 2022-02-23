@@ -6,7 +6,7 @@ spring:
       max-request-size: 256MB
 
   redis:
-    host: ${hoj.redis.host:${REDIS_HOST:172.20.0.2}}
+    host: ${hoj.redis.host:${REDIS_HOST:192.168.1.146}}
     port: ${hoj.redis.port:${REDIS_PORT:6379}}
     timeout: 60000
     jedis:
@@ -19,7 +19,7 @@ spring:
   datasource:
     username: ${hoj.db.username:${MYSQL_USERNAME:root}}
     password: ${hoj.db.password:${MYSQL_ROOT_PASSWORD:hoj123456}}
-    url: jdbc:mysql://${hoj.db.host:${MYSQL_HOST:172.20.0.3}}:${hoj.db.port:${MYSQL_PORT:3306}}/${hoj.db.name:${MYSQL_DATABASE_NAME:hoj}}?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true&rewriteBatchedStatements=true
+    url: jdbc:mysql://${hoj.db.host:${MYSQL_HOST:192.168.1.146}}:${hoj.db.port:${MYSQL_PORT:3306}}/${hoj.db.name:${MYSQL_DATABASE_NAME:hoj}}?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true&rewriteBatchedStatements=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     initial-size: 10 # 初始化时建立物理连接的个数。初始化发生在显示调用init方法，或者第一次getConnection时
@@ -49,7 +49,7 @@ spring:
 shiro-redis:
   enabled: true
   redis-manager:
-    host: ${hoj.redis.host:${REDIS_HOST:172.20.0.2}}:${hoj.redis.port:${REDIS_PORT:6379}}
+    host: ${hoj.redis.host:${REDIS_HOST:192.168.1.146}}:${hoj.redis.port:${REDIS_PORT:6379}}
     password: ${hoj.redis.password:${REDIS_PASSWORD:hoj123456}}
 
 logging:

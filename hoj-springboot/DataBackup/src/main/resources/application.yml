@@ -1,6 +1,9 @@
 spring:
   profiles:
     active: prod
+  config:
+    activate:
+      on-profile: dev
 
 mybatis-plus:
   mapper-locations: classpath*:top/hcode/hoj/dao/xml/**Mapper.xml

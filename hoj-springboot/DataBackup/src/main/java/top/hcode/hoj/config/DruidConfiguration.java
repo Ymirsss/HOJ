@@ -23,7 +23,7 @@ public class DruidConfiguration {
     @Value("${hoj.db.password:${MYSQL_ROOT_PASSWORD:hoj123456}}")
     private String password;
 
-    @Value("${hoj.db.host:${MYSQL_HOST:172.20.0.3}}")
+    @Value("${hoj.db.host:${MYSQL_HOST:192.168.1.146}}")
     private String host;
 
     @Value("${hoj.db.port:${MYSQL_PORT:3306}}")
